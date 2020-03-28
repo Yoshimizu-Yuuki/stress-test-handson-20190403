@@ -7,5 +7,5 @@ class UserBehaviour(TaskSet):
         self.client.get("/")
 
 class WebsiteUser(HttpLocust):
-    task_set = UserBehavior
+    task_set = UserBehaviour
     wait_time = between(5.0, 9.0)
